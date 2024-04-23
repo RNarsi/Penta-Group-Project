@@ -1,51 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DragAndDropScript : MonoBehaviour
 {
-    bool canMove;
-    bool dragging;
-    new Collider2D collider;
-    // Start is called before the first frame update
-    void Start()
+    Vector3 offset;
+
+    void OnMouseDown()
     {
-        collider = GetComponent<Collider2D>();
-        canMove = false;
-        dragging = false;
+        offset = transform.position - MouseWorldPosition();
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnMouseDrag()
     {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = MouseWorldPosition() + offset;
+    }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-                if (collider == Physics2D.OverlapPoint(mousePos))
-            {
-                canMove = true;
-            }
-            else
-            {
-                canMove = false;
-            }
-
-                if (canMove)
-            {
-                dragging = true;
-            }
-        }
-
-        if (dragging)
-        {
-            this.transform.position = mousePos;
-        }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            canMove = false;
-            dragging = false;
-        }
+    Vector3 MouseWorldPosition()
+    {
+        var mouseScreenPos = Input.mousePosition;
+        mouseScreenPos.z = Camera.main.WorldToScreenPoint(transform.position).z;
+        return Camera.main.ScreenToWorldPoint(mouseScreenPos);
     }
 }
