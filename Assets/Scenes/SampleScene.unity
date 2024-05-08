@@ -2625,7 +2625,7 @@ RectTransform:
   m_GameObject: {fileID: 494319155}
   m_LocalRotation: {x: -0, y: -0, z: -0.00019820823, w: -1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.74544, y: 0.74544, z: 0.74544}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 638371287}
@@ -2633,7 +2633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -359.977}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -304, y: -268}
+  m_AnchoredPosition: {x: -219.3, y: -105.9}
   m_SizeDelta: {x: 203.28, y: 115.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &494319157
@@ -6177,7 +6177,7 @@ RectTransform:
   m_GameObject: {fileID: 1135220464}
   m_LocalRotation: {x: -0, y: -0, z: -0.9999895, w: -0.0045889034}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.66766, y: 0.66766, z: 0.66766}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1395934842}
@@ -6185,7 +6185,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.526}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 291.3, y: 222.8}
+  m_AnchoredPosition: {x: 162, y: 122}
   m_SizeDelta: {x: 203.28, y: 115.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1135220466
@@ -10221,6 +10221,7 @@ GameObject:
   - component: {fileID: 1933851510}
   - component: {fileID: 1933851511}
   - component: {fileID: 1933851512}
+  - component: {fileID: 1933851513}
   m_Layer: 0
   m_Name: WP (1)
   m_TagString: White Pieces
@@ -10342,6 +10343,33 @@ CircleCollider2D:
   m_Offset: {x: -0.0000038146973, y: -0.000009536743}
   serializedVersion: 2
   m_Radius: 0.50000066
+--- !u!50 &1933851513
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933851507}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1939800261
 GameObject:
   m_ObjectHideFlags: 0
