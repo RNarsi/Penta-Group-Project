@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3177515336528280945}
   - component: {fileID: 3389322761836622600}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: BoardTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 20, y: 20}
